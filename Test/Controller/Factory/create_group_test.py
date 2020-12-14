@@ -23,6 +23,6 @@ class CreateGroupTestCase(unittest.TestCase):
     def test_case_3(self):
         # given
         name = "М-ФИИТ"
-        year = 2020
+        year = "2020"
         # then
         self.assertEqual(True, True)
