@@ -26,7 +26,3 @@ class CreateSubjectTestCase(unittest.TestCase):
         name = "Math"
         # then
         self.assertEqual(True, True)
-
-
-if __name__ == '__main__':
-    unittest.main()
