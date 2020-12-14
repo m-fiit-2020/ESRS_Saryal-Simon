@@ -168,7 +168,3 @@ class CreateStudentTestCase(unittest.TestCase):
         brs_points = ["asd", 2020, "asd", 100]
         # then
         self.assertEqual(True, True)
-
-
-if __name__ == '__main__':
-    unittest.main()
