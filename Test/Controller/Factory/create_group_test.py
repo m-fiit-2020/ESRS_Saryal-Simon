@@ -20,7 +20,7 @@ class CreateGroupTestCase(unittest.TestCase):
             # when
             raise Exception("Нет... вы ввели пустую строчку ( ´•︵•` )")
 
-    def test_create_group_case_3(self):
+    def test_case_3(self):
         # given
         name = "М-ФИИТ"
         year = 2020
