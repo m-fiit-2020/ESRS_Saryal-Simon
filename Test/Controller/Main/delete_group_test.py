@@ -1,31 +1,7 @@
 import io
 import unittest
 from unittest.mock import patch
-
-
-def convert_input_to_int(user_input: str):
-    try:
-        val = int(user_input)
-        return val
-    except ValueError:
-        raise Exception("Нет... вы ввели не целое число ( ´•︵•` )")
-
-
-def delete_group_logic(cmd_input: str, groups_count: int):
-    if cmd_input == "":
-        raise Exception("Нет... вы ввели пустую строчку ( ´•︵•` )")
-    cmd_input = convert_input_to_int(cmd_input)
-    if cmd_input == 0:
-        print("0 - Выход\n",
-              "1 - Студент\n",
-              "2 - Группа\n",
-              "3 - Предмет\n",
-              "4 - БРС", sep="")
-    elif cmd_input <= groups_count:
-        print("Успешно удален\n",
-              "0. Назад")
-    else:
-        raise Exception("Выход за пределы массива ( ´•︵•` )")
+from Test.Mock.Controller.Main import delete_group_logic
 
 
 class DeleteGroupTestCase(unittest.TestCase):
