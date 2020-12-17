@@ -6,6 +6,7 @@ from unittest.mock import patch
 class EditGroupTestCase(unittest.TestCase):
 
     def setUp(self):
+        self.groups = [["М-ФИИТ", 2020], ["М-ИВТ", 2020]]
         self.edit_group_input = 'Ввыберите группу для редактирования:\n' \
                                 '0. Назад\n' \
                                 '1. М-ФИИТ 2020\n' \
